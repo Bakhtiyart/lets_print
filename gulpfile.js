@@ -15,7 +15,8 @@ var gulp          = require('gulp'),
 		rsync         = require('gulp-rsync'),
 		imageResize   = require('gulp-image-resize'),
 		imagemin      = require('gulp-imagemin'),
-		del           = require('del');
+		del           = require('del'),
+		 svgSprite = require('gulp-svg-sprite');
 
 // Local Server
 gulp.task('browser-sync', function() {
@@ -93,6 +94,20 @@ gulp.task('img2x', function() {
 gulp.task('cleanimg', function() {
 	return del(['app/img/@*'], { force:true })
 });
+
+gulp.task('svgSprite', function () {
+    return gulp.src('app/img/sprite/*.svg') // svg files for sprite
+        .pipe(svgSprite({
+                mode: {
+                    stack: {
+                        sprite: "../sprite.svg"  //sprite file name
+                    }
+                },
+            }
+        ))
+        .pipe(gulp.dest('app/img/'));
+});
+
 
 // If Gulp Version 3
 if (gulpVersion == 3) {
