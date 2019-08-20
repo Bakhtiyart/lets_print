@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 4</title>
+	<title>Lets print</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +21,7 @@
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
-
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -31,10 +31,10 @@
 	<header class="header">
 		<div class="header-top">
 			<div class="container">
-				<div class="row">
+				<div class="row align-items-center justify-content-between">
 					<div class="header-logo">
 						<a href="/" class="logo">
-							<img src="img/logo.png"> 
+							<img src="img/logo.png" alt="lets print logo" class="img-responsive"> 
 						</a>
 						<span class="header-text">Печать на <br> одежде</span>
 					</div>
@@ -46,22 +46,24 @@
 					</ul>
 					<a href="tel:+77715529223"class="phone">+ 7 771 552 92 23</a>
 					<a href="https://www.instagram.com/" class="instagram">
-						<img src="img/instagram_white.png" class="img-responsive">
+						<svg class="instagram__icon" width="30" height="30">
+							<use xlink:href="img/sprite.svg#instagram"></use>
+						</svg>
 					</a>
 				</div>
 			</div>
 		</div><!-- ./header-top -->
 		<div class="header-content">
 			<div class="container">
-				<div class="row">
+				<div class="row align-items-center">
 					<div class="col-md-7">
-						<h1 class="title">Печать на текстиле в Алматы</h1>
+						<h1 class="header-title title">Печать на текстиле в Алматы</h1>
 						<p class="text">Брендирование одежды</p>
 						<a href="!#" class="write-whatsapp">Написать в Whatsapp</a>
 					</div>
 					<div class="col-md-5">
-						<div class="header-content_img-wrap">
-							<img src="img/@1x/header-img.png" alt="" class="header-content_img">
+						<div class="header-content__img-wrap">
+							<img src="img/@2x/header-img.png" alt="" class="header-content__img">
 						</div>
 					</div>
 				</div>
@@ -78,44 +80,52 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<span class="profit__icon-box">
-							<svg class="profit__icon">
-								<use xlink:href="img/sprite.svg#watch"></use>
-							</svg>
-						</span>
-						<div class="profit__desc">
-							<p>Быстрый рассчет заказа, просто позвоните нам</p>
-						</div>
+						<div class="profit__item">
+							<div class="profit__icon-box color-red">
+								<svg class="profit__icon">
+									<use xlink:href="img/sprite.svg#watch"></use>
+								</svg>
+							</div>
+							<div class="profit__desc">
+								<p>Быстрый рассчет заказа, просто позвоните нам</p>
+							</div>
+						</div><!-- ./profit__item -->
 					</div>
 					<div class="col-md-6">
-						<span class="profit__icon-box">
-							<svg class="profit__icon">
-								<use xlink:href="img/sprite.svg#rocket"></use>
-							</svg>
-						</span>
-						<div class="profit__desc">
-							<p>Печатаем быстро и качественно</p>
-						</div>
+						<div class="profit__item">
+							<div class="profit__icon-box">
+								<svg class="profit__icon">
+									<use xlink:href="img/sprite.svg#rocket"></use>
+								</svg>
+							</div>
+							<div class="profit__desc">
+								<p>Печатаем быстро и качественно</p>
+							</div>
+						</div><!-- /.profit__item -->
 					</div>
 					<div class="col-md-6">
-						<span class="profit__icon-box">
-							<svg class="profit__icon">
-								<use xlink:href="img/sprite.svg#pencil-create"></use>
-							</svg>	
-						</span>
-						<div class="profit__desc">
-							<p>Разработаем дизайн макет</p>
-						</div>
+						<div class="profit__item">
+							<div class="profit__icon-box">
+								<svg class="profit__icon">
+									<use xlink:href="img/sprite.svg#pencil-create"></use>
+								</svg>	
+							</div>
+							<div class="profit__desc">
+								<p>Разработаем дизайн макет</p>
+							</div>
+						</div><!-- /.profit__item -->
 					</div>
 					<div class="col-md-6">
-						<span class="profit__icon-box">
-							<svg class="profit__icon">
-								<use xlink:href="img/sprite.svg#delivery"></use>
-							</svg>
-						</span>
-						<div class="profit__desc">
-							<p>Бесплатная доставка в пределах квадрата города</p>
-						</div>
+						<div class="profic__item">
+							<div class="profit__icon-box">
+								<svg class="profit__icon">
+									<use xlink:href="img/sprite.svg#delivery"></use>
+								</svg>
+							</div>
+							<div class="profit__desc">
+								<p>Бесплатная доставка в пределах квадрата города</p>
+							</div>
+						</div><!-- /.profic__item -->
 					</div>
 				</div>
 			</div>
